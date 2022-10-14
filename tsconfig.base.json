@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bandmember/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@bandmember/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@bandmember/shared/environments": [
+        "libs/shared/environments/src/index.ts"
+      ],
+      "@bandmember/shared/styles": ["libs/shared/styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
