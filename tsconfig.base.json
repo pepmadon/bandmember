@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@bandmember/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@bandmember/bandmember/feature-shell": [
+        "libs/bandmember/feature-shell/src/index.ts"
+      ],
       "@bandmember/shared/environments": [
         "libs/shared/environments/src/index.ts"
       ],
