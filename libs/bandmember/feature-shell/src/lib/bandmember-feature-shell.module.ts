@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CoreModule } from '@angular/flex-layout';
 
 import {shellRoutes} from './bandmember-feature-shell.routes';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +16,7 @@ import {SharedUiLayoutModule} from '@bandmember/shared/ui-layout'
     RouterModule.forRoot(shellRoutes),
     BrowserAnimationsModule,
     SharedUiLayoutModule,
+    CoreModule,
 
   ],
   exports: [RouterModule],
