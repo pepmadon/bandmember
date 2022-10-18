@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import {shellRoutes} from './bandmember-feature-shell.routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {SharedUiLayoutModule} from '@bandmember/shared/ui-layout'
 
 
 @NgModule({
@@ -13,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     RouterModule.forRoot(shellRoutes),
     BrowserAnimationsModule,
+    SharedUiLayoutModule,
+
   ],
   exports: [RouterModule],
 })

@@ -22,7 +22,8 @@
       "@bandmember/shared/environments": [
         "libs/shared/environments/src/index.ts"
       ],
-      "@bandmember/shared/styles": ["libs/shared/styles/src/index.ts"]
+      "@bandmember/shared/styles": ["libs/shared/styles/src/index.ts"],
+      "@bandmember/shared/ui-layout": ["libs/shared/ui-layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

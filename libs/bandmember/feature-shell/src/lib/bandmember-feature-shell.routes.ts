@@ -3,13 +3,13 @@ import { Route } from '@angular/router';
 // import { RouterUtil } from '@angular-spotify/web/shared/utils';
 
 
-// import {LayoutComponent} from '@bandcamp/feature-lazy-layout';
+import {LayoutComponent} from '@bandmember/shared/ui-layout';
 
 export const shellRoutes: Route[] = [
-  //{
-    // path: '',
-    // component: LayoutComponent,
-    // children: [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
     //   {
     //     path: '',
     //     loadChildren: async () =>
@@ -62,11 +62,11 @@ export const shellRoutes: Route[] = [
   //     //     redirectTo: 'collection/playlists',
   //     //     pathMatch: 'full'
   //     //   }
-  //   ],
-  //  },
-  //   {
-  //     path: '',
-  //     redirectTo: 'home',
-  //     pathMatch: 'full'
-  //   }
+    ],
+   },
+    {
+      path: '',
+      redirectTo: 'home',
+      pathMatch: 'full'
+    }
 ];
