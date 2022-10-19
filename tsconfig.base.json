@@ -24,6 +24,7 @@
         "libs/shared/environments/src/index.ts"
       ],
       "@bandmember/shared/styles": ["libs/shared/styles/src/index.ts"],
+      "@bandmember/shared/ui-footer": ["libs/shared/ui-footer/src/index.ts"],
       "@bandmember/shared/ui-layout": ["libs/shared/ui-layout/src/index.ts"],
       "@bandmember/shared/ui-main": ["libs/shared/ui-main/src/index.ts"],
       "@bandmember/shared/ui-toolbar": ["libs/shared/ui-toolbar/src/index.ts"]

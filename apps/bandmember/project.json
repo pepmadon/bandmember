@@ -17,7 +17,12 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/bandmember/src/favicon.ico",
-          "apps/bandmember/src/assets"
+          "apps/bandmember/src/assets",
+          {
+            "input": "libs/shared/ui-footer/src/assets",
+            "glob": "**/*",
+            "output": "assets/footer"
+          }
         ],
         "styles": [
           "libs/shared/styles/src/index.scss",
