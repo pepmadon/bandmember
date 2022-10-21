@@ -1,0 +1,31 @@
+version: '3.7'
+services:
+  db:
+    image: mysql:8.0
+    cap_add:
+      - SYS_NICE
+    restart: always
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DB}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PWD}
+
+    ports:
+      - '3306:3306'
+    networks:
+      - bandnetwork
+
+  test-db:
+    image: mysql:8.0
+    cap_add:
+      - SYS_NICE
+    restart: always
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DB}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PWD}
+
+    ports:
+      - '3307:3306'
+    networks:
+      - bandnetwork
+networks:
+  bandnetwork:
