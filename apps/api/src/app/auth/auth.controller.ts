@@ -14,14 +14,14 @@ export class AuthController {
     @Post('signin')
     @HttpCode(HttpStatus.CREATED)
     signin(@Body() dto:AuthDto): Promise<Tokens>{
-        console.log({dto,})
+        //console.log({dto,})
         return this.authService.signin(dto);
     }
     @Public()
     @Post('signup')
     @HttpCode(HttpStatus.OK)
     signup(@Body() dto:AuthDto): Promise<Tokens>{
-        console.log({dto,})
+        //console.log({dto,})
         return this.authService.signup(dto);
     }
 
