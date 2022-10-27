@@ -9,7 +9,9 @@ export class PrismaService extends PrismaClient {
     super({
       datasources: {
         db: {
-          url: config.get('DATABASE_CONN'),
+
+          url: "mysql://root:cmad219@localhost/bandmember",
+          //url: config.get('DATABASE_CONN'),
         },
       },
     });
