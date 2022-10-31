@@ -13,5 +13,6 @@ import { SharedUiFooterModule } from '@bandmember/shared/ui-footer';
     SharedUiFooterModule
   ],
   declarations: [LayoutComponent],
+  exports:[LayoutComponent],
 })
 export class SharedUiLayoutModule {}

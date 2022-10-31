@@ -16,8 +16,16 @@
         "tsConfig": "apps/bandmember/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/bandmember/src/favicon.ico",
-          "apps/bandmember/src/assets",
+          {
+            "glob": "favicon.ico",
+            "input": "libs/shared/assets/src",
+            "output": ""
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/assets",
+            "output": "assets"
+          },
           {
             "input": "libs/shared/ui-footer/src/assets",
             "glob": "**/*",
