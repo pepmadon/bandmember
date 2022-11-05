@@ -10,11 +10,11 @@ export const shellRoutes: Route[] = [
     path: '',
     component: LayoutComponent,
     children: [
-    //   {
-    //     path: '',
-    //     loadChildren: async () =>
-    //       (await import('@bandcamp/feature-lazy-main')).FeatureLazyMainModule
-    //   },
+      {
+        path: '',
+        loadChildren: async () =>
+          (await import('@bandmember/shared/ui-main')).SharedUiMainModule
+      },
 
     //   {
     //     path: 'home',
@@ -66,7 +66,7 @@ export const shellRoutes: Route[] = [
    },
     {
       path: '',
-      redirectTo: 'home',
+      redirectTo: '',
       pathMatch: 'full'
     }
 ];
