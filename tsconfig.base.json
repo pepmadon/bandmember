@@ -17,6 +17,15 @@
     "baseUrl": ".",
     "paths": {
       "@bandmember/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@bandmember/auth/feature-shell": [
+        "libs/auth/feature-shell/src/index.ts"
+      ],
+      "@bandmember/auth/feature-signin": [
+        "libs/auth/feature-signin/src/index.ts"
+      ],
+      "@bandmember/auth/feature-signup": [
+        "libs/auth/feature-signup/src/index.ts"
+      ],
       "@bandmember/bandmember/feature-shell": [
         "libs/bandmember/feature-shell/src/index.ts"
       ],
