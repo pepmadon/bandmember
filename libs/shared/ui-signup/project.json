@@ -1,0 +1,27 @@
+{
+  "name": "shared-ui-signup",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/shared/ui-signup/src",
+  "prefix": "bandmember",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-signup"],
+      "options": {
+        "jestConfig": "libs/shared/ui-signup/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-signup/**/*.ts",
+          "libs/shared/ui-signup/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:auth", "tag:feature-signup"]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "shared-ui-signin",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/shared/ui-signin/src",
+  "prefix": "bandmember",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-signin"],
+      "options": {
+        "jestConfig": "libs/shared/ui-signin/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-signin/**/*.ts",
+          "libs/shared/ui-signin/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:auth", "tag:feature-signin"]
+}

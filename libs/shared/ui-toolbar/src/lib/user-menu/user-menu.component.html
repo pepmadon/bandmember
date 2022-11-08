@@ -1,0 +1,23 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Signup">
+  <mat-icon class="default-menu-icon">person_outline</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu">
+  <!-- <ng-container *ngLet="isLoggedIn$ | async as isLoggedIn"> -->
+  <ng-container>
+    <button (click)="login()" mat-menu-item>
+      <mat-icon>fingerprint</mat-icon>
+      <span>Login</span>
+    </button>
+    <button (click)="signup()" mat-menu-item>
+      <mat-icon>cake</mat-icon>
+      <span>Signup</span>
+    </button>
+    <!-- <button (click)="logout()" mat-menu-item [disabled]="!isLoggedIn">
+        <mat-icon>lock_open</mat-icon>
+        
+        <span style="padding-right: 40px" >Logout</span>
+      </button> -->
+  </ng-container>
+  <!--FIXME:          <span style="padding-right: 40px;" ngStyle.lt-sm="padding-right: 10px;">Logout</span>-->
+</mat-menu>

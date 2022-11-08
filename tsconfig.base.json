@@ -17,17 +17,13 @@
     "baseUrl": ".",
     "paths": {
       "@bandmember/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@bandmember/auth/feature-shell": [
-        "libs/auth/feature-shell/src/index.ts"
-      ],
-      "@bandmember/auth/feature-signin": [
-        "libs/auth/feature-signin/src/index.ts"
-      ],
-      "@bandmember/auth/feature-signup": [
-        "libs/auth/feature-signup/src/index.ts"
-      ],
       "@bandmember/bandmember/feature-shell": [
         "libs/bandmember/feature-shell/src/index.ts"
+      ],
+      "@bandmember/shared/auth": ["libs/shared/auth/src/index.ts"],
+      "@bandmember/shared/core": ["libs/shared/core/src/index.ts"],
+      "@bandmember/shared/data-access": [
+        "libs/shared/data-access/src/index.ts"
       ],
       "@bandmember/shared/environments": [
         "libs/shared/environments/src/index.ts"
@@ -36,6 +32,8 @@
       "@bandmember/shared/ui-footer": ["libs/shared/ui-footer/src/index.ts"],
       "@bandmember/shared/ui-layout": ["libs/shared/ui-layout/src/index.ts"],
       "@bandmember/shared/ui-main": ["libs/shared/ui-main/src/index.ts"],
+      "@bandmember/shared/ui-signin": ["libs/shared/ui-signin/src/index.ts"],
+      "@bandmember/shared/ui-signup": ["libs/shared/ui-signup/src/index.ts"],
       "@bandmember/shared/ui-toolbar": ["libs/shared/ui-toolbar/src/index.ts"]
     }
   },
