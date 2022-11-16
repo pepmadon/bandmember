@@ -7,6 +7,7 @@ import { PrismaModule } from './prisma/prisma.module';
 import { ContactModule } from './contact/contact.module';
 import { APP_GUARD } from '@nestjs/core';
 import { AtGuard } from './common/guards';
+import { StoreModule } from './store/store.module';
 
 
 @Module({
@@ -19,6 +20,7 @@ import { AtGuard } from './common/guards';
     ProductModule, 
     PrismaModule,
     ContactModule,
+    StoreModule,
   ],
   providers: [
     {

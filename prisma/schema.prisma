@@ -26,6 +26,7 @@ model User {
 
   // array of products associated with user
   products Product[]
+  stores Store[]
 
 
 }
@@ -48,6 +49,24 @@ model Product {
   @@map("products")
 
 }
+
+
+model Store {
+  id      Int      @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  name String
+  description String?
+  link String
+  
+  // one users many products
+  userId Int
+  user User @relation(fields: [userId], references: [id])
+  
+  @@map("stores")
+
+}
+
 
 model ContactMessage {
   id      Int      @id @default(autoincrement())
