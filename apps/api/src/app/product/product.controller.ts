@@ -19,7 +19,7 @@ constructor(
     // get all products by id 
 
     @Get()
-    getProducts(@GetCurrentUser() userId: number) {
+    getProducts(@GetCurrentUserId() userId: number) {
         return this.productService.getProducts(
             userId,
           );
@@ -32,7 +32,7 @@ constructor(
 
     @Post()
     CreateProduct(
-        @GetCurrentUser() userId: number,
+        @GetCurrentUserId() userId: number,
         @Body() dto: CreateProductDto,
         ) {
         return this.productService.createProduct(
