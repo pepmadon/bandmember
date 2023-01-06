@@ -33,8 +33,8 @@
           }
         ],
         "styles": [
-          "libs/shared/styles/src/index.scss",
-          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+          "libs/shared/styles/src/styles.scss"
+          
         ],
         "scripts": []
       },
