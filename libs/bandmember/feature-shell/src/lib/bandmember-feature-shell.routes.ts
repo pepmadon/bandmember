@@ -18,7 +18,7 @@ export const shellRoutes: Route[] = [
       {
         path: 'map',
         loadChildren: async () =>
-          (await import('@bandmember/bandmember/map/feature-map')).MapModule,
+          (await import('@bandmember/bandmember/map/feature-shell')).MapFeatureShellModule,
       },
       //   {
       //     path: 'contact',

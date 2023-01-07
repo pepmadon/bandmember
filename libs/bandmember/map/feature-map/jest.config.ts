@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'bandmember-map',
-  preset: '../../../jest.preset.js',
+  displayName: 'bandmember-map-feature-map',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/bandmember/map',
+  coverageDirectory: '../../../../coverage/libs/bandmember/map/feature-map',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

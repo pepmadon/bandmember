@@ -7,7 +7,7 @@ import { SharedUiLayoutModule } from '@bandmember/shared/ui-layout';
 import { shellRoutes } from './bandmember-feature-shell.routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MapModule } from '@bandmember/bandmember/map/feature-map';
+import { FeatureMapModule } from '@bandmember/bandmember/map/feature-map';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { MapModule } from '@bandmember/bandmember/map/feature-map';
     RouterModule.forRoot(shellRoutes),
     BrowserAnimationsModule,
     SharedUiLayoutModule,
-    MapModule,
+    FeatureMapModule,
     CoreModule,
   ],
   exports: [RouterModule],

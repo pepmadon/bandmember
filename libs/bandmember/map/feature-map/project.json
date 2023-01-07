@@ -1,6 +1,6 @@
 {
   "name": "bandmember-map-feature-map",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/bandmember/map/feature-map/src",
   "prefix": "bandmember",
@@ -23,5 +23,5 @@
       }
     }
   },
-  "tags": ["scope:bandmember,tag:feature"]
+  "tags": ["scope:bandmember", "tag:feature"]
 }

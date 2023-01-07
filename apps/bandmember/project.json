@@ -32,7 +32,8 @@
             "output": "assets/footer"
           }
         ],
-        "styles": ["libs/shared/styles/src/styles.scss"],
+        "styles": ["libs/shared/styles/src/styles.scss",
+        "./node_modules/leaflet/dist/leaflet.css"],
         "scripts": []
       },
       "configurations": {
