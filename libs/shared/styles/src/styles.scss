@@ -58,6 +58,8 @@
 
 // @include mat.all-component-themes($cmadon-theme);
 
+@import './lib/leaflet/leaflet';
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
