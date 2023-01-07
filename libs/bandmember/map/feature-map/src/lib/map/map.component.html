@@ -1,8 +1,8 @@
-<p>map works!</p>
-<div class="map-container">
-    <div class="map-frame">
-      <div id="map"></div>
-      <bandmember-map></bandmember-map>
-    </div>
-  </div>
+<div class="map-container"
+  leaflet
+  [leafletOptions]="options"
+  (leafletMapReady)="onMapReady($event)"
+  (leafletClick)="mapClicked($event)">
+</div>
+
   

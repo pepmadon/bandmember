@@ -30,7 +30,12 @@
             "input": "libs/shared/ui-footer/src/assets",
             "glob": "**/*",
             "output": "assets/footer"
-          }
+          },
+          {
+            "glob": "**/*",
+            "input": "./node_modules/leaflet/dist/images",
+            "output": "assets/"
+        }
         ],
         "styles": ["libs/shared/styles/src/styles.scss",
         "./node_modules/leaflet/dist/leaflet.css"],
