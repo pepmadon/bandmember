@@ -90,6 +90,7 @@
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "jest-preset-angular": "~12.2.2",
+    "leaflet": "^1.9.3",
     "nx": "14.8.4",
     "pactum": "^3.2.3",
     "passport": "^0.6.0",
