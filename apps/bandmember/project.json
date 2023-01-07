@@ -38,8 +38,7 @@
           }
         ],
         "styles": [
-          "libs/shared/styles/src/styles.scss",
-          "./node_modules/leaflet/dist/leaflet.css"
+          "libs/shared/styles/src/styles.scss"
         ],
         "scripts": []
       },

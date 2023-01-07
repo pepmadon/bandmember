@@ -23,6 +23,9 @@
       "@bandmember/bandmember/landing/feature-landing": [
         "libs/bandmember/landing/feature-landing/src/index.ts"
       ],
+      "@bandmember/bandmember/landing/feature-shell": [
+        "libs/bandmember/landing/feature-shell/src/index.ts"
+      ],
       "@bandmember/bandmember/map/feature-map": [
         "libs/bandmember/map/feature-map/src/index.ts"
       ],

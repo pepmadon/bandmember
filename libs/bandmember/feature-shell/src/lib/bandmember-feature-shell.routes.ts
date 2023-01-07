@@ -12,7 +12,7 @@ export const shellRoutes: Route[] = [
       {
         path: '',
         loadChildren: async () =>
-          (await import('@bandmember/shared/ui-main')).SharedUiMainModule,
+          (await import('@bandmember/bandmember/landing/feature-shell')).FeatureShellModule,
       },
 
       {
