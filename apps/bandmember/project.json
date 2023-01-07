@@ -35,10 +35,12 @@
             "glob": "**/*",
             "input": "./node_modules/leaflet/dist/images",
             "output": "assets/"
-        }
+          }
         ],
-        "styles": ["libs/shared/styles/src/styles.scss",
-        "./node_modules/leaflet/dist/leaflet.css"],
+        "styles": [
+          "libs/shared/styles/src/styles.scss",
+          "./node_modules/leaflet/dist/leaflet.css"
+        ],
         "scripts": []
       },
       "configurations": {

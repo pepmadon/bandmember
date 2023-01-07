@@ -1,0 +1,27 @@
+{
+  "name": "bandmember-landing-feature-landing",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/bandmember/landing/feature-landing/src",
+  "prefix": "bandmember",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/bandmember/landing/feature-landing"],
+      "options": {
+        "jestConfig": "libs/bandmember/landing/feature-landing/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/bandmember/landing/feature-landing/**/*.ts",
+          "libs/bandmember/landing/feature-landing/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:bandmember", "tag:feature"]
+}
