@@ -1,0 +1,26 @@
+// host removes margin 
+:host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  }
+.wrapper {
+
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    background-color: ffff;
+    min-height: 100vh;
+  
+  }
+  
+
+  
+  .page-main {
+  
+    flex-grow: 1;
+
+  }
