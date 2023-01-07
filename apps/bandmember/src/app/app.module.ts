@@ -8,7 +8,11 @@ import { BandmemberFeatureShellModule} from '@bandmember/bandmember/feature-shel
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule, BandmemberFeatureShellModule],
+  imports: [
+    BrowserModule, 
+    HttpClientModule, 
+    BandmemberFeatureShellModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

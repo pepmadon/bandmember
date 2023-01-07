@@ -20,7 +20,12 @@
       "@bandmember/bandmember/feature-shell": [
         "libs/bandmember/feature-shell/src/index.ts"
       ],
-      "@bandmember/bandmember/map": ["libs/bandmember/map/src/index.ts"],
+      "@bandmember/bandmember/map/feature-map": [
+        "libs/bandmember/map/feature-map/src/index.ts"
+      ],
+      "@bandmember/bandmember/map/feature-shell": [
+        "libs/bandmember/map/feature-shell/src/index.ts"
+      ],
       "@bandmember/shared/auth": ["libs/shared/auth/src/index.ts"],
       "@bandmember/shared/core": ["libs/shared/core/src/index.ts"],
       "@bandmember/shared/data-access": [

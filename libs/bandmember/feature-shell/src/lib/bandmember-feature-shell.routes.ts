@@ -2,8 +2,7 @@ import { Route } from '@angular/router';
 
 // import { RouterUtil } from '@angular-spotify/web/shared/utils';
 
-
-import {LayoutComponent} from '@bandmember/shared/ui-layout';
+import { LayoutComponent } from '@bandmember/shared/ui-layout';
 
 export const shellRoutes: Route[] = [
   {
@@ -13,19 +12,19 @@ export const shellRoutes: Route[] = [
       {
         path: '',
         loadChildren: async () =>
-          (await import('@bandmember/shared/ui-main')).SharedUiMainModule
+          (await import('@bandmember/shared/ui-main')).SharedUiMainModule,
       },
 
-    //   {
-    //     path: 'home',
-    //     loadChildren: async () => (await import('@bandcamp/ui/home')).UiHomeModule
+      {
+        path: 'map',
+        loadChildren: async () =>
+          (await import('@bandmember/bandmember/map/feature-map')).MapModule,
+      },
+      //   {
+      //     path: 'contact',
+      //     loadChildren: async () => (await import('@bandcamp/feature/lazy/contact')).FeatureLazyContactModule
 
-    //   },
-    //   {
-    //     path: 'contact',
-    //     loadChildren: async () => (await import('@bandcamp/feature/lazy/contact')).FeatureLazyContactModule
-
-    //   },
+      //   },
 
       //   {
       //     path: 'search',
@@ -51,22 +50,22 @@ export const shellRoutes: Route[] = [
       //       (await import('@angular-spotify/web/album/feature/shell')).AlbumShellModule
       //   },
       // {
-      //   path: '404',  
+      //   path: '404',
       //   loadChildren: () => import('@bandcamp/ui/not-found').then((module) => module.NotFoundModule),
       //   data: { title: '404', preload: false },
       // },
       // 404 should be last
-  //    { path: '**', redirectTo: '404', pathMatch: 'full' },
-  //     //   {
-  //     //     path: 'collection',
-  //     //     redirectTo: 'collection/playlists',
-  //     //     pathMatch: 'full'
-  //     //   }
+      //    { path: '**', redirectTo: '404', pathMatch: 'full' },
+      //     //   {
+      //     //     path: 'collection',
+      //     //     redirectTo: 'collection/playlists',
+      //     //     pathMatch: 'full'
+      //     //   }
     ],
-   },
-    {
-      path: '',
-      redirectTo: '',
-      pathMatch: 'full'
-    }
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
 ];

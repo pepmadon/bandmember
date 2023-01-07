@@ -1,0 +1,27 @@
+{
+  "name": "bandmember-map-feature-shell",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/bandmember/map/feature-shell/src",
+  "prefix": "bandmember",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/bandmember/map/feature-shell"],
+      "options": {
+        "jestConfig": "libs/bandmember/map/feature-shell/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/bandmember/map/feature-shell/**/*.ts",
+          "libs/bandmember/map/feature-shell/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:bandmember", "tag:feature"]
+}
