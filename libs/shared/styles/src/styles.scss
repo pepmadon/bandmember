@@ -1,62 +1,13 @@
-// @use '@angular/material' as mat;
 
-
-// @include mat.core();
-
-
-// $crimson-palette: (
-//   50: #ffebef,
-//   100: white,
-//   200: #f0999f,
-//   300: #e77179,
-//   400: #f24e58,
-//   500: #f83a40,
-//   600: #e9313e,
-//   700: #d72638,
-//   800: #ca1e30,
-//   900: #bb0d24,
-//   contrast: (
-//     50: rgba(black, 0.87),
-//     100: rgba(black, 0.87),
-//     200: rgba(black, 0.87),
-//     300: rgba(black, 0.87),
-//     400: white,
-//     500: white,
-//     600: white,
-//     700: white,
-//     800: white,
-//     900: white,
-//   )
-// );
-
-
-// $cmadon-primary: mat.define-palette($crimson-palette,100);
-// $cmadon-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-
-// // The "warn" palette is optional and defaults to red if not specified.
-// $cmadon-warn: mat.define-palette(mat.$red-palette);
-
-
-//   // Typography config based on the default, but using "Comic Sans" as the
-//   // default font family for all levels.
-//   $cmadon-typography: mat.define-typography-config(
-//     $font-family: 'Comic Sans', 
-//   );
-
-
-//   //"Montserrat", "Helvetica", Arial, sans-serif;
-
-// $cmadon-theme: mat.define-light-theme((
-//  color: (
-//    primary: $cmadon-primary,
-//    accent: $cmadon-accent,
-//    warn: $cmadon-warn,
-//  ),
-//  typography: $cmadon-typography,
-
-// ));
-
-// @include mat.all-component-themes($cmadon-theme);
+@import '~ng-zorro-antd/style/index.min.css';
+@import '~ng-zorro-antd/slider/style/index.min.css';
+@import '~ng-zorro-antd/skeleton/style/index.min.css';
+@import '~ng-zorro-antd/switch/style/index.min.css';
+@import '~ng-zorro-antd/modal/style/index.min.css';
+@import '~ng-zorro-antd/button/style/index.min.css';
+@import '~ng-zorro-antd/tooltip/style/index.min.css';
+@import '~ng-zorro-antd/dropdown/style/index.min.css';
+@import './lib/ant/index.scss';
 
 @import './lib/leaflet/leaflet';
 
@@ -67,5 +18,15 @@
 
 @import './lib/material/index.scss';
 
+//TODO add body for global
+// body {
+//   min-width: 600px;
+//   line-height: 20px;
+//   letter-spacing: 0.015em;
+//   color: #b3b3b3;
+//   @apply h-full w-full absolute overflow-hidden flex flex-col;
+// }
 
-
+// .tracks-container .ant-skeleton-paragraph > li {
+//   height: 24px !important;
+// }
